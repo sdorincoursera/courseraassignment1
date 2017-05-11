@@ -10,7 +10,7 @@
         $scope.messageStyle="";
         
         $scope.checkFood=function(){
-            if($scope.myArray==""){$scope.myMessage="Please enter data first";} else {
+            if($scope.myArray==""){$scope.myMessage="Please enter data first";$scope.messageStyle="color:red";} else {
                 var arr=$scope.myArray.split(",");
                 var message="";
                 var checkIfEmpty=0;
